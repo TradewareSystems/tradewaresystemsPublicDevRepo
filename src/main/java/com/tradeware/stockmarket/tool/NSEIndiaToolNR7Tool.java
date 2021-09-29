@@ -40,6 +40,7 @@ public class NSEIndiaToolNR7Tool {
 			webClient.getOptions().setJavaScriptEnabled(false);
 			webClient.getOptions().setUseInsecureSSL(false);
 			webClient.getOptions().setCssEnabled(false);
+			webClient.getOptions().setTimeout(20000);
 			
 			webClient.addRequestHeader("Accept",
 					"application/json; charset=utf-8");
