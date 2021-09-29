@@ -53,6 +53,7 @@ public class NSEIndiaBankNiftyTradeToolNewNseSite {
 		webClient.getOptions().setJavaScriptEnabled(false);
 		webClient.getOptions().setUseInsecureSSL(true);
 		webClient.getOptions().setCssEnabled(false);
+		webClient.getOptions().setTimeout(20000);
 	}
 
 	private static final String BASE_URL = "https://www.nseindia.com";
