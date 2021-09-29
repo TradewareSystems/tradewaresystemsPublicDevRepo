@@ -52,6 +52,7 @@ public class NSEIndiaCloudDataBaseToolNewNseSiteAdditional {
 		webClient.getOptions().setJavaScriptEnabled(false);
 		webClient.getOptions().setUseInsecureSSL(true);
 		webClient.getOptions().setCssEnabled(false);
+		webClient.getOptions().setTimeout(20000);
 		
 		symbolSet = new HashSet<String>();
 		additionalSymbolSet = new HashSet<String>();
