@@ -90,6 +90,7 @@ public static int totalSymbolsProcessed;
 			webClient.getOptions().setJavaScriptEnabled(false);
 			webClient.getOptions().setUseInsecureSSL(true);
 			webClient.getOptions().setCssEnabled(false);
+			webClient.getOptions().setTimeout(20000);
 			singletonTool = new NSEIndiaToolOptionChainTool();
 		}
 		return singletonTool;
@@ -102,6 +103,7 @@ public static int totalSymbolsProcessed;
 			webClient.getOptions().setUseInsecureSSL(true);
 			webClient.getOptions().setCssEnabled(false);
 			webClient.getOptions().setThrowExceptionOnScriptError(false);
+			webClient.getOptions().setTimeout(20000);
 			// singletonTool = new NSEIndiaToolOptionChainTool();
 			singletonTool = this;
 		}
