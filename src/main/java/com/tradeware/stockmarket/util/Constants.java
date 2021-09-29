@@ -1,0 +1,423 @@
+package com.tradeware.stockmarket.util;
+
+public interface Constants extends Constants2, Constants3 {
+
+	String TIME_PATTERN = "hh:mm:ss";
+	String TIME_ZONE = "Asia/Kolkata";
+	String DATE_PATTERN = "ddMMMyyyy";
+	String DATE_PATTERN_HIST_DATA = "yyyy-MM-dd HH:mm:ss";
+	String DATE_PATTERN_WITH_AM_PM = "yyyy-MM-dd hh:mm:ss";// "yyyy-MM-dd hh:mm:ss a";
+	String DATE_PATTERN_WITH_AM_PM_2 = "yyyy-MM-dd hh:mm:ss a";
+	String DATE_PATTERN_REPORT_DATE = "yyyy-MM-dd";
+	String DATE_PATTERN_EXP_DATES = "dd-MMM-yyyy";
+	String DATE_PATTERN_TRADE_NAME = "dd-MMM-yyyy HH:mm:ss";
+
+	// Time constants
+	String DATE_PATTERN_NSE = "dd-MMM-yyyy";
+	String DATE_PATTERN_NEW_NSE_SITE = "dd-MM-yyyy";
+	String STOCK_INSTRUMENT_TYPE_FUTURE = "FUTSTK";
+	
+	String OPTION_CALL = "CE";
+	String OPTION_PUT = "PE";
+	
+	String STRATEGY_NR7= "NR7";
+	String STRATEGY_ORB= "ORB";
+	
+	String STRATEGY_NR7_R1= "NR7_R1";
+	String STRATEGY_ORB_R1= "ORB_R1";
+	
+	String STRATEGY_NR7_R2= "NR7_R2";
+	String STRATEGY_ORB_R2= "ORB_R2";
+
+	// UI messages
+	String INVALID_USER = "Invalid user, Not an admin user.";
+	String ALREADY_LOGGED_IN = "Nkp algo trader admin user alrady logged in. And setup the Nkp algo trader data for the day.";
+
+	// Validations
+	String EMAIL_ALREADY_REGISTRED = "Oops!  There is already a user registered with the email provided.";
+	String USER_ID_ALREADY_REGISTRED = "Oops!  There is already a user registered with the user id provided.";
+	
+	String EMPTY_STRING = "";
+	String EXCHANGE_NSE = "NSE";
+	String EXCHANGE_NFO = "NFO";
+	String FUTURE_KEY_PREFIX_NSE = "NSE:";
+	String FUTURE_KEY_PREFIX_NFO = "NFO:";
+	String FUTURE_KEY_SUFFIX_NFO = "FUT";
+	String FUTURE_SYMBOL = "(FUT)";
+	String FUTURE_SYMBOL_REMOVE = "\\(FUT\\)";
+	
+	String NA = "NA";
+	String STNA = "NA";//Strength tradable
+	String VWNA = "NA";//VWAP tradable
+	String BUY = "BUY";
+	String ANY = "ANY";
+	String ANYNULL = "ANYNULL";
+	String UNCLEAR = "UNCLEAR";
+	
+	String SEL6 = "SEL6";
+	String BUY6 = "BUY6";
+	
+	String SELL = "SELL";
+	String SEL7 = "SEL7";
+	String SEL4 = "SEL4";
+	String BUY7 = "BUY7";
+	String BUY4 = "BUY4";
+	
+	String BUY5 = "BUY5";//"BUY_2TIMES_STRENGTH";
+	String SEL5 = "SEL5";//"SELL_2TIMES_STRENGTH";
+	
+	String BUY2 = "BUY2";//"BUY_2TIMES_STRENGTH";
+	String SEL2 = "SEL2";//"SELL_2TIMES_STRENGTH";
+
+	String BUY3 = "BUY3";//"BUY_3TIMES_STRENGTH";
+	String SEL3 = "SEL3";//"SELL3TIMES_STRENGTH";
+
+	String BUY_SPIKE = "BYSP";// "BUY_SPIKE";
+	String SELL_SPIKE = "SLSP";//"SELL_SPIKE";
+
+	String BUY_SPIKE_1 = "BSP1";//"BUY_SPIKE(1)";
+	String SELL_SPIKE_1 = "SSP1";//"SELL_SPIKE(1)";
+
+	String BUY_SPIKE_1DOT5 = "BS1P";//"BUY_SPIKE(1.5)";
+	String SELL_SPIKE_1DOT5 = "SS1P";//"SELL_SPIKE(1.5)";
+
+	String BUY_SPIKE_2 = "BSP2";//"BUY_SPIKE(2)";
+	String SELL_SPIKE_2 = "SSP2";//"SELL_SPIKE(2)";
+	
+	String BUY_SPIKE_2DOT5 = "BS2P";//"BUY_SPIKE(2.5)";
+	String SELL_SPIKE_2DOT5 = "SS2P";//"SELL_SPIKE(2.5)";
+	
+	String BUY_SPIKE_3 = "BSS3";//"BUY_SPIKE(3plus)";
+	String SELL_SPIKE_3 = "SSP3";//"SELL_SPIKE(3plus)";
+	String BUY_SELL_SPIKE_3 = "SSP3";//"BUY/SELL_SPIK>3";//"BUY/SELL_SPIKE(3plus)";
+	
+	
+	//temporary
+	String VS_BUY = "VS_BUY";
+	String VS_SELL = "VS_SELL";
+	String S_BUY = "S_BUY";
+	String S_SELL = "S_SELL";
+	//temporary
+
+	String COMMA = ",";
+	String UNDER_SCORE = "_";
+	String SEPARATOR = " ::: ";
+	String SPACE = " ";
+	String COMMA_SPACE = ", ";
+	String KITE_HIST_DATA_1_MINUTES_INTERVAL = "minute";
+	String KITE_HIST_DATA_5_MINUTES_INTERVAL = "5minute";
+	String KITE_HIST_DATA_15_MINUTES_INTERVAL = "15minute";
+	String KITE_HIST_DATA_60_MINUTES_INTERVAL = "60minute";
+	String KITE_HIST_DATA_DAY_INTERVAL = "day";
+
+	int ONE = 1;
+	int TWO = 2;
+	/*int THREE = 3;
+	int FOUR = 4;
+	int FIVE = 5;
+	int SIX = 6;*/
+	
+	
+	
+	String NIFTY = "NIFTY";
+	String NIFTY_50 = "NIFTY 50";
+	String NIFTY_50_KITE_INDEX_KEY = "NSE:NIFTY 50";
+	String NIFTY_50_FUT = "NIFTY 50(FUT)";
+	String BANKNIFTY = "BANKNIFTY";
+	String NIFTYBANK = "NIFTYBANK";
+	String BANK_NIFTY = "BANK NIFTY";
+	String NSE_BANK_NIFTY_KITE_INDEX_KEY = "NSE:NIFTY BANK";
+	String BANKNIFTY_FUT = "BANK NIFTY(FUT)";
+	String FINNIFTY = "FINNIFTY";
+	String FINNIFTY_FUT = "FINNIFTY(FUT)";
+	String NSE_NIFTY_FIN_SERVICE_KITE_INDEX_KEY = "NSE:NIFTY FIN SERVICE";
+	String NSE_SITE_FINNIFTY_SYMBOL = "NIFTY FINANCIAL SERVICES";
+	String NSE_SITE_NIFTY_BANK_SYMBOL = "NIFTY BANK";
+	
+	String GREEN_BUY_PRESSURE = "BYGC";//"GREEN_BUY";
+	String GREEN_SELL_PRESSURE = "SLGC";//"GREEN_SELL";
+	String RED_BUY_PRESSURE = "BYRC";//"RED_BUY";
+	String RED_SELL_PRESSURE = "SLRC";//"RED_SELL";
+	String REEVERSE_MOTHER_CANDLE = " REEVERSE_MC";
+	
+	String GREEN_CANDLE = "G";
+	String RED_CANDLE = "R";
+	String GREEN_BUY_PRESSURE_INFO = "G-BUY-PRESSURE ";
+	String GREEN_SELL_PRESSURE_INFO = "G-SELL-PRESSURE ";
+	String RED_BUY_PRESSURE_INFO = "R-BUY-PRESSURE ";
+	String RED_SELL_PRESSURE_INFO = "R-SELL-PRESSURE ";
+	String RED_BOLD_FONT_STYLE_CLASS = "redBold";
+	String GREEN_BOLD_FONT_STYLE_CLASS = "greenBold";
+	String RED_FONT_STYLE_CLASS = "redFont";
+	String GREEN_FONT_STYLE_CLASS = "greenFont";
+	
+	double VOL_1_5_DOUBLE = 1.5;
+	String VWAP_NO_DIRECTION = "NA";//" VWAP_NA ";
+	String VWAP_BUY = "VBUY";//"VWAP BUY_OPEN^VWAP^CLOSE ";
+	String VWAP_SELL = "VSEL";//"VWAP SELL_OOPEN!VWAP!CLOSE ";
+	String VWAP_STRONG_BUY = "SBUY";//"VWAP STRONG BUY_OOPEN^VWAP^CLOSE ";
+	String VWAP_STRONG_SELL = "SSEL";//"VWAP STRONG SELL_OPEN!VWAP!CLOSE ";
+
+	String VV_STRONG_BUY = "VVSB";
+	String V_STRONG_BUY = "HVSB";
+	String STRONG_BUY_CLOSE = "HSBC";
+	String STRONG_BUY_OPEN = "HSBO";
+	String VV_STRONG_SELL = "VVSS";
+	String V_STRONG_SELL = "HVSS";
+	String STRONG_SELL_CLOSE = "HSSC";
+	String STRONG_SELL_OPEN = "HSSO";
+	
+	
+	
+	
+	
+	
+	
+	String PROFIT = "PROFIT";
+	String LOSS = "LOSS";
+	String BUY_EXIT_PROFIT = "BEPR";//"BUY_EXIT_PROFIT";
+	String SELL_EXIT_PROFIT = "SEPR";//"SELL_EXIT_PROFIT";
+	String BUY_EXIT_LOSS = "BELS";//BUY_EXIT_LOSS";
+	String EXIT_FORCE = "_FROCE";// "_FROCE";
+	String SELL_EXIT_LOSS = "SELS";//"SELL_EXIT_LOSS";
+	String BUY_EXIT_PROFIT_FORCE = "BEPF";//BUY_EXIT_PROFIT_FORCE
+	String SELL_EXIT_PROFIT_FORCE = "SEPF";//SELL_EXIT_PROFIT_FORCE
+	String BUY_EXIT_LOSS_FORCE = "BELF";//BUY_EXIT_LOSS_FORCE
+	String SELL_EXIT_LOSS_FORCE = "SELF";//SELL_EXIT_LOSS_FORCE
+	String BUYER_SELLER_DIFF_FAILED = "BSDF";//"BUYER-SELLER DIFF_FAILED";
+	String CANDLE_MOVEMENT_RULE_FAILED = "SMCN";//"CANDLE_MOVE_FAILED(SMALL_CNDL)"; //32 chars "CANDLE_MOVE_FAILED(SMALL_CANDLE)";
+	String CANDLE_GAP_UP_DOWN_MOVEMENT_FAILED = "CNMF";//"CANDLE_OVER_MOVED";
+	// 04-21-2021 start - afterSomeSuccess [04-27-2021]
+	String BUY_EXIT_MANUAL_PROFIT = "BEMP";//"BUY_EXIT_MANUAL_PROFIT";
+	String SELL_EXIT_MANUAL_PROFIT = "SEMP";//"SELL_EXIT_MANUAL_PROFIT";
+	String BUY_EXIT_MANUAL_LOSS = "BEML";//BUY_EXIT_MANUAL_LOSS";
+	String SELL_EXIT_MANUAL_LOSS = "SEML";//"SELL_EXIT_MANUAL_LOSS";
+	// 04-21-2021 end
+	String BUY_TARGET = " BUY TARGET DONE @ ";
+	String SELL_TARGET = " SELL TARGET DONE @ ";
+	String WITH_PROFIT = " WITH PROFIT @  ";
+	String CLOSED_WITH_LOSE = " CLOSED WITH LOSE @ ";
+	String WITH_LOSS = " WITH LOSS @ ";
+	String BUY_ACTIVATED_MSG = " @ BUY Activated @ ";
+	String SELL_ACTIVATED_MSG = " @ SELL Activated @ ";
+	String BUY_ACTIVATE = " @ BUY Activated @ ";
+	String SELL_ACTIVATE = " @ SELL Activated @ ";
+	String BUYER_SELLER_DIFF_FAILED_MSG = " @ BUYER-SELLER DIFF FAILED @ ";
+	String AT = " @ ";
+	
+	
+	
+	// For Kite Connect
+	String ORDER_VARIETY_BO = "bo";
+	String ORDER_VARIETY_CO = "co";
+	String ORDER_VARIETY_REGULAR = "regular";
+	String ORDER_TYPE_LIMIT = "LIMIT";// "BO";//"MARKET";
+	String ORDER_TYPE_MARKET = "MARKET";
+	String PRODUCT_MIS = "MIS";
+	String VALIDITY_DAY = "DAY";
+	String ORDER_STATUS_OPEN = "OPEN";
+	String ORDER_STATUS_COMPLETE = "COMPLETE";
+	String ORDER_STATUS_REJECTed = "REJECTED";
+	String ORDER_STATUS_CANCELLED = "CANCELLED";
+	String ORDER_STATUS_CO_2ND_LEG_TRIGGER_PENDING = "TRIGGER PENDING";
+	String ORDER_PLACEMENT_FAILED = "Order placement failled -- ";
+	String ORDER_CANCELLED_SUCCESSFUL = "Order closed successfully -- ";
+	String ORDER_CANCELLED_ERROR = "Order closing failed -- ";
+	
+	String PRODUCT_CASH_AND_CARRY = "CNC";
+	String PRODUCT_FNO_NRML = "NRML";
+	
+	int ERROR_COUNTER = 1000;
+	double TARGET_SAFE_STOP_LOSS_500 = 500d;
+	double TARGET_SAFE_STOP_LOSS_600 = 600d;
+	double TARGET_SAFE_STOP_LOSS_1200 = 1200d;
+	double TARGET_SAFE_STOP_LOSS_1250 = 1250d;
+	double TARGET_SAFE_STOP_LOSS_1000 = 1000d;
+	double TARGET_SAFE_STOP_LOSS_1500 = 1500d;
+	double TARGET_SAFE_STOP_LOSS_2500 = 2500d;
+	double TARGET_AMOUNT = 2000d;
+	double TARGET_AMOUNT_4000 = 4000d;
+	double TARGET_AMOUNT_5000 = 5000d;
+	double TARGET_CO_STOP_LOSS = 3000d;// 4500d;// 5000d;
+	double TARGET_SAFE_STOP_LOSS = 1500d;
+	double TARGET_MAX_STOP_LOSS = 30000d;
+	double TARGET_MAX_FIRST_LOSS = 5000d;
+	double TARGET_MAX_SECOND_LOSS = 15000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_500 = 500d;
+	double TARGET_CO_STOP_LOSS_PROFIT_1000 = 1000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_1500 = 1500d;
+	double TARGET_CO_STOP_LOSS_PROFIT_2000 = 2000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_2500 = 2500d;
+	double TARGET_CO_STOP_LOSS_PROFIT_3000 = 3000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_3500 = 3500d;
+	
+	double TARGET_AMOUNT_7500 = 7500d;
+	double TARGET_AMOUNT_15000 = 15000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_250 = 250d;
+	double TARGET_CO_STOP_LOSS_PROFIT_1200 = 1200d;
+	double TARGET_CO_STOP_LOSS_PROFIT_4000 = 4000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_4500 = 4500d;
+	double TARGET_CO_STOP_LOSS_PROFIT_5000 = 5000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_6000 = 6000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_7500 = 7500d;
+	double TARGET_CO_STOP_LOSS_PROFIT_10000 = 10000d;
+	double TARGET_CO_STOP_LOSS_PROFIT_12500 = 12500d;
+	double TARGET_CO_STOP_LOSS_PROFIT_15000 = 15000d;
+	double LIMIT_ORDER_PLACABLE_PRICE = 0.0005d;
+	double IGNORABLE_OPEN_SPIKE = 0.0005d;
+	double TOP_TRADER_INCREAMENT = 0.05d;
+	
+	double IGNORABLE_OPEN_SPIKE_1 = 0.001d;
+	double IGNORABLE_OPEN_SPIKE_1DOT5 = 0.0015d;
+	double IGNORABLE_OPEN_SPIKE_2 = 0.002d;
+	double IGNORABLE_OPEN_SPIKE_2DOT5 = 0.0025d;
+
+	double TARGET_MAX_DAY_LOSS = -10000d;
+	// For Kite Connect END
+	
+	
+	String TRADE_TYPE_FORWARD = "FORWARD";
+	String TRADE_TYPE_REVERSE = "REVERSE";
+	
+	
+	
+	
+	String OHLC_RULE_BREAK  = "OHRB";//"OHLC_RULE_BREAK";
+	String BUY_SELL_BREAK  =  "OBSB";//"OHLC_BUY_SELL_BREAK";
+	String BUY_SELL_BREAK_TRADED_STATE  =  "TBSB";//"OBSB";////"OHLC_BUY_SELL_BREAK";
+	
+	String TRADE_PLACE_RULE_7TIMES = "customRule1-7Times";
+	String TRADE_PLACE_RULE_3TIMES_OHLC = "customRule2-3TimesOHLC";
+	String TRADE_PLACE_RULE_7TIMES_OHLC = "customRule1-7TimesOHLC";
+	String TRADE_PLACE_RULE_OPGTAVGLO_OPLTAVGHI = "customRule2-LoOpHi";
+	String TRADE_PLACE_RULE_OPGTAVGLO_OPLTAVGHI_OHLC = "customRule2-LoOpHiOHLC";
+	String TRADE_PLACE_RULE_VWAP_STRONG = "VWAP_STRONG";
+	String TRADE_PLACE_RULE_VWAP_STRONG_OHLC = "VWAP_STRONG_OHLC";
+	String TRADE_PLACE_RULE_VWAP_STRONG_OBSERVE = "VWAP_STRONG_OBSERVE";
+	String TRADE_PLACE_RULE_SMA_VWAP_LVL1 = "SMAandVWAPformulaLvl1";
+	String TRADE_PLACE_RULE_SMA_VWAP_LVL1_MIN5 = "SMAandVWAPformulaLvl1Min5";
+	String TRADE_PLACE_RULE_SMA_VWAP_LVL2 = "SMAandVWAPformulaLvl2";
+	String TRADE_PLACE_RULE_SMA_VWAP_LVL2_MIN5 = "SMAandVWAPformulaLvl2Min5";
+	
+	//04-20-2021
+	String TRADE_PLACE_RULE_CUSTOM_STRONG_VOLUME = "customRuleStrongVolumeFilter";
+	String TRADE_PLACE_RULE_CUSTOM_STRONG_VOLUME_VWAP = " customRuleStrongVolumeVwap";
+	//04-21-2021  start - afterSomeSuccess
+	String TRADE_PLACE_RULE_INIT_PROFITABLE_PROD_RULE = "INIT_PROFITABLE_PROD_RULE";
+	
+	String TRADE_PLACE_RULE_SMA_VWAP_LVL2_MIN1_PROD = "SMA-VWAP-LVL2-MIN1";
+	String TRADE_PLACE_RULE_SMA_VWAP_LVL2_MIN5_PROD = "SMA-VWAP-LVL2-MIN5";
+	// 04-21-2021 end
+	// Phase 5 :: 05-15-2021 start - afterSomeSuccess
+	String TRADE_PLACE_RULE_ENGULFING_FORWARD_PROD = "ENGULFING(FWD)";
+	String TRADE_PLACE_RULE_COMPRESS_BLAST = "COMPRESS_BLAST";
+	// Phase 5 :: 05-15-2021 end - afterSomeSuccess
+	String APP_SERVER_STATUS_DOWN = "DOWN";
+	String APP_SERVER_STATUS_START_UP_IN_PROGRESS = "<span style='color:green'>STARTING UP<span>";
+	String APP_SERVER_STATUS_SCANNERS_RUNNING = "<span style='color:green'>RUNNING<span>";
+	String APP_SERVER_STATUS_SCANNERS_TERMINATED = "<span style='color:red'>TERMINATED<span>";
+	String APP_SERVER_STATUS_SCANNERS_COMPLETE = "<span style='color:green'>COMPLETE<span>";
+
+	String ATTENTION_STYLE_BUY = "attentionStyleBuy";
+	String ATTENTION_STYLE_SELL = "attentionStyleSell";
+	
+	double PCR_CRASH_DOWN_TREND = 1.7;
+	double PCR_UP_TREND = 0.8;
+	
+	String STRONG_BUY = "STRONG_BUY";
+	String STRONG_SELL = "STRONG_SELL";
+	
+	
+	String SHORT_COVERING = "SHORT_COVERING";
+	String UNWIND_DOWN_TREND = "UNWIND_DOWN_TREND";
+	
+	String NEW_LONG_UP_TREND = "NEW_LONG_UP_TREND";
+	String NEW_SHORT_DOWN_TREND = "NEW_SHORT_DOWN_TREND";
+	
+	
+	String BREAK_LINE = "<BR>";
+	
+	
+	
+	
+	
+	
+	String OPTION_ASK_VALUE = "askValue";
+	String OPTION_BID_VALUE = "bidValue";
+	
+	String TRADE_POSIITON_NEW = "NEW";
+	String TRADE_POSIITON_OPEN = "OPEN";
+	String TRADE_POSIITON_CLOSE = "CLOSE";
+	
+	String TRADE_OPTION_TYPE_CALL = "Call";
+	String TRADE_OPTION_TYPE_PUT = "Put";
+	
+	String INDEX_MAP = "indexMap";
+	String PARAM_SYMBOL_ID = "symbolId";
+	//String PARAM_STRIKE_PRICE_ATM = "strikePriceAtm";
+	String PARAM_EXPIRY_DATE = "expiryDate";
+	String PARAM_ATM_TRADE_TYPE   = "atmTradeType";
+	String PARAM_HIGHER_OF_ATM_TRADE_TYPE   = "higherOfAtmTradeType";
+	String PARAM_LOWER_OF_ATM_TRADE_TYPE   = "lowerOfAtmTradeType";
+	String PARAM_ATM_OPTION_TYPE   = "atmOptionType";
+	String PARAM_HIGHER_OF_ATM_OPTION_TYPE   = "higherOfAtmOptionType";
+	String PARAM_LOWER_OF_ATM_OPTION_TYPE   = "lowerOfAtmOptionType";
+	
+	String PARAM_STRIKE_PRICE_OF_ATM = "strikePriceOfAtm";
+	String PARAM_STRIKE_PRICE_HIGHER_OF_ATM = "strikePriceHigherOfAtm";
+	String PARAM_STRIKE_PRICE_LOWER_OF_ATM = "strikePriceLowerOfAtm";
+	
+	String PARAM_ASK_PRICE_OF_ATM = "askPriceOfAtm";
+	String PARAM_BID_PRICE_OF_ATM = "bidPriceOfAtm";
+	String PARAM_ASK_PRICE_HIGHER_OF_ATM = "askPriceHigherOfAtm";
+	String PARAM_BID_PRICE_HIGHER_OF_ATM = "bidPriceHigherOfAtm";
+	String PARAM_ASK_PRICE_LOWER_OF_ATM = "askPriceLowerOfAtm";
+	String PARAM_BID_PRICE_LOWER_OF_ATM = "bidPriceLowerOfAtm";
+	
+	String EXPIRY_DATES = "expiryDates";
+	String STRIKE_PRICES = "strikePrices";
+	String STOCK_LAST_PRICE = "stockLastPrice";
+	String FUTURE_LAST_PRICE = "futureLastPrice";
+	String INDEX_VALUE = "indexValue";
+	String OPTION_TRADE_ORDER = "optionTradeOrder";
+	String OPTION_TRADE_STRATEGY = "tradeStrategy";
+	String OPTION_TRADE_SUB_STRATEGY = "tradeSubStrategy";//"optionTradeSubStrategy";
+	String TRADE_STRATEGY_OPTIONS = "tradeStrategyOptions";
+	
+	String OPTION_STRATEGY_SPREAD = "Spread";
+	String OPTION_STRATEGY_STRADDLE = "Straddle";
+	String OPTION_STRATEGY_STRANGLE = "Strangle";
+	String OPTION_STRATEGY_BUTTER_FLY = "Butter Fly";
+	String OPTION_STRATEGY_RATIO_SPREAD = "Ratio Spread";
+	
+	String OPTION_STRATEGY_BEAR_CALL = "Bear Call";
+	String OPTION_STRATEGY_BULL_PUT = "Bull Put";
+	String OPTION_STRATEGY_BEAR_PUT = "Bear Put";
+	String OPTION_STRATEGY_BULL_CALL = "Bull Call";
+	String OPTION_STRATEGY_SHORT_STRANGLE = "Short Strangle";
+	String OPTION_STRATEGY_LONG_STRANGLE = "Long Strangle";
+	String OPTION_STRATEGY_SHORT_STRADDLE = "Short Straddle";
+	String OPTION_STRATEGY_LONG_STRADDLE = "Long Straddle";
+	String OPTION_STRATEGY_SHORT_BUTTER_FLY_CALL = "Short Butter Fly (Call)";
+	String OPTION_STRATEGY_SHORT_BUTTER_FLY_PUT = "Short Butter Fly (Put)";
+	String OPTION_STRATEGY_LONG_BUTTER_FLY_CALL = "Long Butter Fly (Call)";
+	String OPTION_STRATEGY_LONG_BUTTER_FLY_PUT = "Long Butter Fly (Put)";
+	String OPTION_STRATEGY_LONG_BUTTER_FLY  = "Long Butter Fly";
+	String OPTION_STRATEGY_SHORT_BUTTER_FLY  = "Short Butter Fly";
+	
+	String OPTION_STRATEGY_RATIO_SPREAD_CALL = "Call Ratio Spread";
+	String OPTION_STRATEGY_RATIO_SPREAD_PUT = "Put Ratio Spread";
+	
+	String OPTION_STRATEGY_SHORT = "Short";
+	String OPTION_STRATEGY_LONG = "Long";
+	
+	double ADJUST_AND_EARN_TRADE_CHARGES_POINTS = 10d;
+	double STRANGLE_ADJUSTMENT_RATIO = 2.083; //48%
+	double STRANGLE_ADJUSTMENT_NEW_TRADE_VAUE = 0.9; //90%
+	double RATIO_SPREAD_ADJUSTMENT_NEW_TRADE_VAUE = 0.45; //45%
+	double RATIO_SPREAD_ADJUSTMENT_NEW_TRADE_VAUE_2 = 0.25; //25%
+	
+	double STRATEGY_STRADDLE_STOP_LOSS_VALUE = .40;//40%
+	double STRATEGY_STRADDLE_STOP_TARGET_VALUE = .10;//10%
+	double BUTTER_FLY_TARGET_PROFIT = 0.3; //30%
+}
